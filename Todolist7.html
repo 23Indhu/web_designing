@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(231, 6, 194, 0.911);
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #c7078d;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .add-btn {
+      background: green;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+    .task {
+      background: #f9f9f9;
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: left;
+    }
+    .task button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+    }
+    .edit {
+      background: rgb(17, 226, 233);
+    }
+    .delete {
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>TO DO LIST</h2>
+    <input type="text" placeholder="Enter a new task">
+    <button class="add-btn">Add Task</button>
+
+    <!-- Example Task -->
+    <div class="task">
+      Team Call 
+      <button class="edit">Modifier</button>
+      <button class="delete">Supprimer</button>
+    </div>
+  </div>
+</body>
+</html>
