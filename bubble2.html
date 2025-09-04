@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Ad with Bubble Background</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #f629ca;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    .bubbles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0; left: 0;
+      z-index: 0;
+    }
+    .bubble {
+      position: absolute;
+      bottom: -100px;
+      border-radius: 50%;
+      background: #f1f1f1;
+      opacity: 0.5;
+      animation: rise linear infinite;
+    }
+    .bubble:nth-child(1){width:40px;height:40px;left:10%;animation:rise 8s infinite;}
+    .bubble:nth-child(2){width:20px;height:20px;left:20%;animation:rise 5s 1s infinite;}
+    .bubble:nth-child(3){width:50px;height:50px;left:35%;animation:rise 7s 2s infinite;}
+    .bubble:nth-child(4){width:80px;height:80px;left:50%;animation:rise 11s infinite;}
+    .bubble:nth-child(5){width:35px;height:35px;left:55%;animation:rise 6s 1s infinite;}
+    .bubble:nth-child(6){width:45px;height:45px;left:65%;animation:rise 8s 3s infinite;}
+    .bubble:nth-child(7){width:90px;height:90px;left:70%;animation:rise 12s 2s infinite;}
+    .bubble:nth-child(8){width:25px;height:25px;left:80%;animation:rise 6s 2s infinite;}
+    .bubble:nth-child(9){width:15px;height:15px;left:70%;animation:rise 5s 1s infinite;}
+    .bubble:nth-child(10){width:90px;height:90px;left:25%;animation:rise 10s 4s infinite;}
+    
+    @keyframes rise {
+      0%   { bottom: -100px; transform: translateX(0); }
+      50%  { transform: translateX(100px); }
+      100% { bottom: 110vh; transform: translateX(-200px); }
+    }
+
+    /* Boutique Ad Box */
+    .ad-box {
+      position: relative;
+      z-index: 1;
+      max-width: 350px;
+      margin: 80px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .ad-box h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #d60087;
+    }
+    .ad-box p {
+      margin: 10px 0;
+      font-size: 1rem;
+      color: #444;
+    }
+    .price {
+      display: inline-block;
+      background: #f629ca;
+      color: white;
+      font-size: 1.2rem;
+      padding: 8px 15px;
+      border-radius: 25px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bubbles">
+    <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+    <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+    <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
+
+  <!-- Boutique Ad -->
+  <div class="ad-box">
+    <h1>✨ Elegant Boutique ✨</h1>
+    <p>Trendy Dresses, Sarees & Accessories</p>
+    <span class="price">Starting at ₹999</span>
+  </div>
+</body>
+</html>
